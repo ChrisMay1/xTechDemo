@@ -54,7 +54,7 @@ class cw_transmit(gr.top_block):
         self.osmosdr_sink_0.set_bandwidth(0, 0)
         
         # Wave File Source - 52MHz
-        self.blocks_wavfile_source_52MHz = blocks.wavfile_source('/home/pi/Downloads/52MHz_JM.wav', True)
+        self.blocks_wavfile_source_52MHz = blocks.wavfile_source('/home/pi/Documents/xTech_Demo/52MHz_JM.wav', True)
         self.analog_wfm_tx_52MHz = analog.wfm_tx(
         	audio_rate=samp_rate,
         	quad_rate=samp_rate,
@@ -70,7 +70,7 @@ class cw_transmit(gr.top_block):
         )
         
         # Wave File Source - 145MHz
-        self.blocks_wavfile_source_145MHz = blocks.wavfile_source('/home/pi/Downloads/145MHz_JM.wav', True)
+        self.blocks_wavfile_source_145MHz = blocks.wavfile_source('/home/pi/Documents/xTech_Demo/145MHz_JM.wav', True)
         self.analog_wfm_tx_145MHz = analog.wfm_tx(
         	audio_rate=samp_rate,
         	quad_rate=samp_rate,
@@ -86,7 +86,7 @@ class cw_transmit(gr.top_block):
         )
         
         # Wave File Source  - 225MHz
-        self.blocks_wavfile_source_225MHz = blocks.wavfile_source('/home/pi/Downloads/225MHz_JM.wav', True)
+        self.blocks_wavfile_source_225MHz = blocks.wavfile_source('/home/pi/Documents/xTech_Demo/225MHz_JM.wav', True)
         self.analog_wfm_tx_225MHz = analog.wfm_tx(
         	audio_rate=samp_rate,
         	quad_rate=samp_rate,
@@ -102,7 +102,7 @@ class cw_transmit(gr.top_block):
         )
         
         # Wave File Source  - 435MHz
-        self.blocks_wavfile_source_435MHz = blocks.wavfile_source('/home/pi/Downloads/435MHz_JM.wav', True)
+        self.blocks_wavfile_source_435MHz = blocks.wavfile_source('/home/pi/Documents/xTech_Demo/435MHz_JM.wav', True)
         self.analog_wfm_tx_435MHz = analog.wfm_tx(
         	audio_rate=samp_rate,
         	quad_rate=samp_rate,
@@ -118,7 +118,7 @@ class cw_transmit(gr.top_block):
         )
         
         # Wave File Source  - 905MHz
-        self.blocks_wavfile_source_905MHz = blocks.wavfile_source('/home/pi/Downloads/905MHz_JM.wav', True)
+        self.blocks_wavfile_source_905MHz = blocks.wavfile_source('/home/pi/Documents/xTech_Demo/905MHz_JM.wav', True)
         self.analog_wfm_tx_905MHz = analog.wfm_tx(
         	audio_rate=samp_rate,
         	quad_rate=samp_rate,
